@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #555;
+}
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    border-bottom: 2px solid #555;
+}
+.topHeader_branding {
+    width: 150px;
+}
+.topHeader_branding img {
+    width: 100%;
+}
+.topHeader_account {
+    display: flex;
+    align-items: center;
+}
+.topHeader_account-menu {
+    display: flex;
+    margin-right: 15px;
+
+}
+.topHeader_account-menu li {
+    margin-right: 15px;
+}
+.topHeader_account-menu a {
+    color: inherit;
+}
+.topHeader_account-thumb {
+    border-radius: 50%;
+}
+.mainContent {
+    display: flex;
+}
+.mainContent_sidebar, .mainContent_context {
+    padding: 15px 30px;
+}
+.mainContent_sidebar {
+    flex: .15;
+}
+.mainContent_context {
+    min-height: calc(100vh - 60px);
+    flex: .85;
+    background-color: #333;
+}

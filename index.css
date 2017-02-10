@@ -40,10 +40,31 @@ body {
     padding: 15px 30px;
 }
 .mainContent_sidebar {
-    flex: .15;
+    width: 15%;
+    transition: width 200ms ease-in-out;
+}
+@media(max-width: 500px){
+    .mainContent_sidebar {
+        opacity: 0;
+        padding: 0;
+        width: 0;
+    }
 }
 .mainContent_context {
     min-height: calc(100vh - 60px);
-    flex: .85;
+    width: 85%;
     background-color: #333;
+}
+.context_items {
+    display: flex;
+}
+.context_item {
+    color: white;
+    padding: 10px 15px;
+}
+.sqaure {
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    background-color: white;
 }
